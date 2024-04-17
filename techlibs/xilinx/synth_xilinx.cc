@@ -663,9 +663,9 @@ struct SynthXilinxPass : public ScriptPass
 					if (nowidelut)
 						abc_opts += " -luts 2:2,3,6:5";
 					else if (widelut_size == 8)
-						abc_opts += " -luts 2:2,3,6:5,10,20";
+						abc_opts += " -luts 2:2,3,6:5,10,10";
 					else
-						abc_opts += " -luts 2:2,3,6:5,10,20,40";
+						abc_opts += " -luts 2:2,3,6:5,10:10";
 				}
 				if (dff)
 					abc_opts += " -dff";
